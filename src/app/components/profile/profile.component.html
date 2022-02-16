@@ -1,0 +1,11 @@
+<div id="parent">
+    <form id="profile">
+        <img src="assets/default-profile-pic.jpg" alt="profile-pic">
+        <div id="profile-text">
+            <h1>{{ userProfile.name }}</h1>
+            <p><a href="mailto:{{ userProfile.contact }}">{{ userProfile.contact }}</a></p>
+            <p>{{ userProfile.bio }}</p>
+            <button routerLink="/edit-profile">Edit</button>
+        </div>
+    </form>
+</div>

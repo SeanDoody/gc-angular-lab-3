@@ -1,0 +1,57 @@
+#parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#profile {
+    width: 400px;
+    box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 1);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#profile-text {
+    width: 100%;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: #505355;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+button {
+    height: 30px;
+    width: 100%;
+    background-color: #505355;
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: #5BECD8;
+    color: #505355; 
+}
