@@ -1,12 +1,12 @@
-<!-- <div id="parent">
+<div id="parent">
     <form id="edit-profile">
         <h1>Use the form below to update your profile.</h1>
         <label for="name">Name</label>
-        <input id="name" type="text">
+        <input [(ngModel)]="name" id="name" name="name" type="text">
         <label for="contact">Contact</label>
-        <input id="contact" type="text">
+        <input [(ngModel)]="contact" id="contact" name="contact" type="text">
         <label for="bio">Bio</label>
-        <input id="bio" type="text">
-        <button>Update</button>
+        <input [(ngModel)]="bio" id="bio" name="bio" type="text">
+        <button (click)="updateProfile()">Update</button>
     </form>
-</div> -->
+</div>
