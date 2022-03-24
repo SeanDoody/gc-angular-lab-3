@@ -8,26 +8,26 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { EditComponent } from './components/edit/edit.component';
 
 const appRoutes: Routes = [
-  { path: 'profile', component: ProfileComponent },
-  { path: 'edit-profile', component: EditComponent },
-  { path: '', redirectTo: '/profile', pathMatch: 'full' },
- { path: '**', redirectTo: '/profile', pathMatch: 'full' }
+    { path: 'profile', component: ProfileComponent },
+    { path: 'edit-profile', component: EditComponent },
+    { path: '', redirectTo: '/profile', pathMatch: 'full' },
+    { path: '**', redirectTo: '/profile', pathMatch: 'full' }
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProfileComponent,
-    EditComponent
-  ],
-  imports: [
-    RouterModule.forRoot(appRoutes),
-    BrowserModule,
-    RouterModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ProfileComponent,
+        EditComponent
+    ],
+    imports: [
+        RouterModule.forRoot(appRoutes),
+        BrowserModule,
+        RouterModule,
+        AppRoutingModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,18 +3,18 @@ import { UserProfile } from 'src/app/models/user-profile';
 import { ProfileService } from 'src/app/services/profile/profile.service';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+    selector: 'app-profile',
+    templateUrl: './profile.component.html',
+    styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
 
-  userProfile!: UserProfile;
+    userProfile!: UserProfile;
 
-  constructor(private profileService: ProfileService) { }
+    constructor(private profileService: ProfileService) { }
 
-  ngOnInit(): void {
-    this.userProfile = this.profileService.getUserProfile();
-  }
+    ngOnInit(): void {
+        this.userProfile = this.profileService.getUserProfile();
+    }
 
 }
